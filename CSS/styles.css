@@ -1,0 +1,275 @@
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: #212121;
+    margin-bottom: 300px;
+}
+
+span,
+.first-name h3 {
+    color: #9e40fb;
+}
+
+/* NAV BAR */
+
+.nav-bar-container {
+    width: 100%;
+    height: 80px;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    font-size: 20px;
+}
+
+.name-title {
+    margin: 1rem 0 0 20px;
+}
+
+.first-name {
+    margin-left: -1.5rem;
+}
+
+.nav-bar-itens {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    gap: 1.5rem;
+    margin: 25px 0;
+    right: 4rem;
+}
+
+.nav-bar-itens a :hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    border-radius: 5px;
+}
+
+.nav-bar-itens a {
+    text-decoration: none;
+    color: #7e00fc;
+}
+
+.nav-bar-itens a span {
+    color: white;
+}
+
+/* MAIN */
+main {
+    height: 750px;
+    padding: 300px;
+    font-size: 35px;
+    position: relative;
+    isolation: isolate;
+    --bg-image: url(../imgs/background-linhas-de-codigo.png);
+    --bg-image-opacity: .2;
+}
+
+main::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: var(--bg-image);
+    opacity: var(--bg-image-opacity);
+    background-size: cover;
+    background-position: center;
+}
+
+article {
+    padding: 20px;
+    line-height: 70px;
+}
+
+#baixar-cv{
+    padding: 10px;
+    width: 11rem;
+    border-radius: 40px;
+    border: 1px solid white;
+    background-color: #222;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#baixar-cv:hover{
+    background-color: #7e00fc;
+    border: none;
+}
+
+.greetings h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.redes-sociais {
+    margin-left: 40px;
+}
+
+.redes-sociais a :hover {
+    color: #9e40fb;
+}
+
+/* SOBRE MIM */
+
+.sobre-mim{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title-sobre-mim {
+    font-size: 30px;
+}
+
+.title-sobre-mim h2 {
+    transform: rotate(-90deg);
+    margin-top: -15px;
+    max-width: 40px;
+    margin: 0 auto;
+}
+
+.sobre-mim-itens {
+    display: flex;
+    max-width: 80%;
+    margin: 190px auto;
+    gap: 100px;
+}
+
+#perfil-photo{
+    max-width: 400px;
+    border-radius: 150px;
+}
+
+#about-me {
+    max-width: 550px;
+    font-size: 20px;
+    margin-top: 60px;
+    text-align: left;
+}
+
+/* HABILIDADES */
+
+.title-habilidades{
+    font-size: 30px;
+    max-width: 40px;
+    margin: 0 auto;
+}
+
+.title-habilidades h1{
+    margin-left: -100px;
+}
+
+.title-habilidades h2 {
+    transform: rotate(-90deg);
+    margin-top: -15px;
+    max-width: 40px;
+}
+
+.habilidades {
+    max-height: 400px;
+}
+
+.habilidades-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-items: stretch;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 45px;
+}
+
+.png-logo img {
+    max-height: 200px;
+    transition: .25s;
+}
+
+.png-logo img:hover{
+    transform: scale(1.2);
+}
+
+/* PROJETOS */
+
+.projetos {
+    margin-top: 180px;
+}
+
+.title-projetos{
+    text-align: center;
+    font-size: 30px;
+}
+
+.title-projetos h2 {
+    transform: rotate(-90deg);
+    max-width: 40px;
+    margin: 0 auto;
+}
+
+.carrossel-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-items: stretch;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 100px;
+}
+
+.card {
+    height: 370px;
+    background-color: #555;
+    border: 1px solid #555;
+    border-radius: 15px;
+    transition: .35s;
+    display: flex;
+    flex-direction: column;
+    transition: .35s;
+}
+
+.card:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.card img {
+    width: 100%;
+    max-height: 139.5px;
+    border-radius: 15px;
+}
+
+.card-content, .card-content p {
+    padding: 10px 10px 10px 5px;
+}
+
+.card-content {
+    height: 185px;
+}
+
+.frame-works-icons {
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 17px;
+}
+
+.btns {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.btns a {
+    margin: 0 10px 0;
+}
+
+.btns a :hover {
+    transform: scale(1.3);
+}
