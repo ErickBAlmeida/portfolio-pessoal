@@ -1,0 +1,38 @@
+.title-habilidades{
+    font-size: 30px;
+    max-width: 40px;
+    margin: 0 auto;
+}
+
+.title-habilidades h1{
+    margin-left: -100px;
+}
+
+.title-habilidades h2 {
+    transform: rotate(-90deg);
+    margin-top: -15px;
+    max-width: 40px;
+}
+
+.habilidades {
+    max-height: 400px;
+}
+
+.habilidades-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-items: stretch;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 45px;
+}
+
+.png-logo img {
+    max-height: 200px;
+    transition: .25s;
+}
+
+.png-logo img:hover{
+    transform: scale(1.2);
+}

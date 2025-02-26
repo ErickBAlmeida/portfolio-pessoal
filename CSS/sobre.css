@@ -1,0 +1,36 @@
+.sobre-mim{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title-sobre-mim {
+    font-size: 30px;
+}
+
+.title-sobre-mim h2 {
+    transform: rotate(-90deg);
+    margin-top: -15px;
+    max-width: 40px;
+    margin: 0 auto;
+}
+
+.sobre-mim-itens {
+    display: flex;
+    max-width: 80%;
+    margin: 190px auto;
+    gap: 100px;
+}
+
+#perfil-photo{
+    max-width: 400px;
+    border-radius: 150px;
+}
+
+#about-me {
+    max-width: 550px;
+    font-size: 20px;
+    margin-top: 60px;
+    text-align: left;
+}

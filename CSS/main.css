@@ -1,0 +1,53 @@
+main {
+    height: 750px;
+    padding: 300px;
+    font-size: 35px;
+    position: relative;
+    isolation: isolate;
+    --bg-image: url(../imgs/background-linhas-de-codigo.png);
+    --bg-image-opacity: .2;
+}
+
+main::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: var(--bg-image);
+    opacity: var(--bg-image-opacity);
+    background-size: cover;
+    background-position: center;
+}
+
+article {
+    padding: 20px;
+    line-height: 70px;
+}
+
+#baixar-cv{
+    padding: 10px;
+    width: 11rem;
+    border-radius: 40px;
+    border: 1px solid white;
+    background-color: #222;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#baixar-cv:hover{
+    background-color: #918cff;
+    border: none;
+}
+
+.greetings h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.redes-sociais {
+    margin-left: 40px;
+}
+
+.redes-sociais a :hover {
+    color: #918cff;
+}

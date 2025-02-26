@@ -1,0 +1,88 @@
+.contatos {
+    margin-top: 180px;
+}
+
+.title-contatos{
+    text-align: center;
+    font-size: 25px;
+}
+
+.title-contatos h2 {
+    transform: rotate(-90deg);
+    max-width: 40px;
+    margin: 0 auto;
+}
+
+.form-container {
+    width: 30%;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 75px auto 0;
+    padding: 20px;
+}
+
+.form-container h1{
+    text-align: center;
+}
+
+.grupo {
+    position: relative;
+    margin: 10px;
+}
+
+label {
+    columns: #918cff;
+    padding: 0 5px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 1em;
+    pointer-events: none;
+    transition: .3s;
+}
+
+input,
+textarea {
+    color: white;
+    border: 2px solid #918cff;
+    background: transparent;
+    border-radius: 5px;
+    width: 300px;
+    height: 60px;
+    padding: 0 1rem;
+    outline: none;
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+    padding: 1rem 1rem;
+}
+
+.grupo-mensagem label {
+    top: 25%;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: 0;
+    background-color: #212121;
+    font: 0.7rem;
+}
+
+.form-btn {
+    margin: 10px;
+}
+
+.form-btn input {
+    color: #918cff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-btn input:hover {
+    background-color: #918cff;
+    color: #fff;
+}

@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erick Barros | Portfolio</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Erick Barros</title>
     <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,7 +26,6 @@
                 </div>
             </div>
             <ul class="nav-bar-itens"> 
-                
                 <li><a href="#">< <span>Home</span> /></a></li>
                 <li><a href="#">< <span>Sobre</span> /></a></li>
                 <li><a href="#">< <span>Habilidades</span> /></a></li>
@@ -34,6 +34,9 @@
             </ul>
         </div>
     </nav>
+
+    <!-- MAIN -->
+    
     <main>
         <article>
             <div class="greetings">
@@ -42,8 +45,8 @@
             </div>
             <input type="submit" value="baixar cv" id="baixar-cv">
             <div class="redes-sociais">
-                <a href="https://www.linkedin.com/in/erick-b-almeida/"><i class="fa-brands fa-linkedin" id="fa-linkedin"></i></a>
-                <a href="https://github.com/ErickBAlmeida"><i class="fa-brands fa-github" id="fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/erick-b-almeida/" target="_blank"><i class="fa-brands fa-linkedin" id="fa-linkedin"></i></a>
+                <a href="https://github.com/ErickBAlmeida" target="_blank"><i class="fa-brands fa-github" id="fa-github"></i></a>
             </div>
         </article>
     </main>
@@ -53,11 +56,14 @@
             <h2><span><</span> </h2> 
         </div>
         <div class="sobre-mim-itens">
-            <img src="IMGS/nova-foto-de-perfil.jpg" alt="" id="perfil-photo">
+            <img src="imgs/nova-foto-de-perfil.jpg" alt="" id="perfil-photo">
             <p id="about-me">Meu nome é Erick, tenho 21 anos e atualmente estou cursando Engenharia de Computação. No momento, foco meus estudos em desenvolvimento Front-End (HTML, CSS e JavaScript) e pretendo me aprofundar em React e Angular. Além disso, possuo experiências e projetos em Python e tenho um bom entendimento de SQL. Futuramente, pretendo migrar para a área de desenvolvimento Full Stack. <br><br>
                 Sou um entusiasta de tecnologia, fã de esportes e games. Sou comunicativo, amigável e bom em trabalhos em equipe. Busco sempre aprender coisas novas e me divertir desenvolvendo minhas habilidades, trazendo criatividade e eficiência para meus projetos.</p>
         </div>
     </section>
+
+    <!-- HABILIDADES -->
+
     <section class="habilidades">
         <div class="title-habilidades">
             <h1>Habilidades</h1>
@@ -76,22 +82,7 @@
             <h1>Projetos</h1>
             <h2><span><</span></h2> 
         </div>
-        <!-- carrossel -->
-        <div class="carrossel-container">
-            <div class="card">
-                <img src="imgs/projetos/projeto-cadastro.jpg" alt="">
-                <div class="card-content">
-                    <h1>Projeto de cadastro</h1>
-                    <div class="frame-works-icons">
-                        <i class="fa-brands fa-python"></i>
-                    </div>
-                    <p>Um script em Python que funciona como um software de cadastro de clientes, alunos ou itens, com interface e integrado à um banco de dados SQLite.</p>
-                </div>
-                <div class="btns">
-                    <a href="#"><i class="fa-solid fa-globe"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></i></a>
-                </div>
-            </div>
+        <div class="carrossel-container multiple-slick">
             <div class="card">
                 <img src="imgs/projetos/projeto-host.jpg" alt="">
                 <div class="card-content">
@@ -103,8 +94,21 @@
                     <p>Front-end para o site de uma empresa fictícia hDC Host com responsividade para diferentes tamanhos de telas.</p>
                 </div>
                 <div class="btns">
-                    <a href="#"><i class="fa-solid fa-globe"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://erickbalmeida.github.io/hDC-Host/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                    <a href="https://github.com/ErickBAlmeida/Projeto-hDC-Host-Curso-de-Frontend" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/projetos/projeto-cadastro.jpg" alt="">
+                <div class="card-content">
+                    <h1>Projeto de cadastro</h1>
+                    <div class="frame-works-icons">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <p>Um script em Python que funciona como um software de cadastro de clientes, alunos ou itens, com interface e integrado à um banco de dados SQLite.</p>
+                </div>
+                <div class="btns">
+                    <a href="https://github.com/ErickBAlmeida/Cadastro" target="_blank"><i class="fa-brands fa-github"></i></i></a>
                 </div>
             </div>
             <div class="card">
@@ -114,12 +118,52 @@
                     <p></p>
                 </div>
             </div>
-            
+            <div class="card">
+                <img src="imgs/projetos/engrenagem-work-in-progress.jpg" alt="">
+                <div class="card-content">
+                    <h1>work-in-progress</h1>
+                    <p></p>
+                </div>
+            </div>
         </div>
-        <!-- display card -->
     </section>
+
+    <!-- CONTATO -->
+
     <section class="contatos">
-        <!-- forms -->
+        <div class="title-contatos">
+            <h1>Contato</h1>
+            <h2><span><</span></h2> 
+        </div>
+        <form class="form-container">
+            <h1>Entre em contato!</h1>
+            <div class="grupo-nome grupo">
+                <input required type="text" id="nome">
+                <label for="nome">Nome</label>
+            </div>
+            <div class="grupo-email grupo">
+                <input required type="email" id="email">
+                <label for="email">e-mail</label>
+            </div>
+            <div class="grupo-mensagem grupo">
+                <textarea required name="mesangem" id="mesangem"></textarea>
+                <label for="mesangem">Mensagem</label>
+            </div>
+            <div class="form-btn">
+                <input type="submit">
+            </div>
+        </form>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/JavaScript">
+        $('.multiple-slick').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+        });
+    </script>
 </body>
 </html>
