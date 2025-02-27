@@ -22,9 +22,13 @@ article {
     line-height: 70px;
 }
 
-#baixar-cv{
-    padding: 10px;
-    width: 11rem;
+article a{
+    text-decoration: none;
+}
+
+.baixar-cv{
+    padding: 10px 20px;
+    margin-left: 10px;
     border-radius: 40px;
     border: 1px solid white;
     background-color: transparent;
@@ -32,7 +36,7 @@ article {
     cursor: pointer;
 }
 
-#baixar-cv:hover{
+.baixar-cv:hover{
     background-color: var(--second-color);
     border: none;
 }
@@ -43,7 +47,7 @@ article {
 }
 
 .redes-sociais {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .redes-sociais a :hover {

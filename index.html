@@ -26,31 +26,36 @@
                 </div>
             </div>
             <ul class="nav-bar-itens"> 
-                <li><a href="#">< <span>Home</span> /></a></li>
-                <li><a href="#">< <span>Sobre</span> /></a></li>
-                <li><a href="#">< <span>Habilidades</span> /></a></li>
-                <li><a href="#">< <span>Projetos</span> /></a></li>
-                <li><a href="#">< <span>Contatos</span> /></a></li>
+                <li><a href="#main">< <span>Home</span> /></a></li>
+                <li><a href="#about">< <span>Sobre</span> /></a></li>
+                <li><a href="#skills">< <span>Habilidades</span> /></a></li>
+                <li><a href="#projects">< <span>Projetos</span> /></a></li>
+                <li><a href="#contact">< <span>Contatos</span> /></a></li>
             </ul>
         </nav>
     </div>
 
     <!-- MAIN -->
     
-    <main>
+    <main id="main">
         <article>
             <div class="greetings">
                 <h1>Olá, eu sou <span>Erick</span>.</h1>
                 <h2>Desenvolvedor Front-end</h2>
             </div>
-            <input type="submit" value="baixar cv" id="baixar-cv">
+             <button class="baixar-cv">
+                <a href="public/curriculo_erick_barros.pdf" id="cv-btn" target="_blank">Baixar CV</a>
+             </button>
             <div class="redes-sociais">
                 <a href="https://www.linkedin.com/in/erick-b-almeida/" target="_blank"><i class="fa-brands fa-linkedin" id="fa-linkedin"></i></a>
                 <a href="https://github.com/ErickBAlmeida" target="_blank"><i class="fa-brands fa-github" id="fa-github"></i></a>
             </div>
         </article>
     </main>
-    <section class="sobre-mim">
+
+    <!-- SOBRE -->
+    
+    <section class="sobre-mim" id="about">
         <div class="title-sobre-mim">
             <h1>Sobre</h1>
             <h2><span><</span> </h2> 
@@ -64,7 +69,7 @@
 
     <!-- HABILIDADES -->
 
-    <section class="habilidades">
+    <section class="habilidades" id="skills">
         <div class="title-habilidades">
             <h1>Habilidades</h1>
             <h2><span><</span></h2> 
@@ -77,7 +82,10 @@
             <div class="png-logo"><img src="/assets/images/logos_png/png-sqlite.png" alt="SQLite png"></div>
         </div>
     </section>
-    <section class="projetos">
+
+    <!-- PROJETOS -->
+    
+    <section class="projetos" id="projects">
         <div class="title-projetos">
             <h1>Projetos</h1>
             <h2><span><</span></h2> 
@@ -130,7 +138,7 @@
 
     <!-- CONTATO -->
 
-    <section class="contatos">
+    <section class="contatos" id="contact">
         <div class="title-contatos">
             <h1>Contato</h1>
             <h2><span><</span></h2> 
