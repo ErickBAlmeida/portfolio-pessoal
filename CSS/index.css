@@ -1,0 +1,7 @@
+@import "./global.css";
+@import "./layouts/nav.css";
+@import "./layouts/main.css";
+@import "./layouts/sobre.css";
+@import "./layouts/habilidades.css";
+@import "./layouts/projetos.css";
+@import "./layouts/contato.css";

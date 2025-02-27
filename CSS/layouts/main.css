@@ -2,7 +2,7 @@ main {
     height: 750px;
     padding: 300px;
     font-size: 35px;
-    --bg-image: url(../imgs/background-linhas-de-codigo.png);
+    --bg-image: url(/assets/images/background-linhas-de-codigo.png);
     --bg-image-opacity: .2;
 }
 
@@ -27,13 +27,13 @@ article {
     width: 11rem;
     border-radius: 40px;
     border: 1px solid white;
-    background-color: #222;
+    background-color: transparent;
     font-size: 20px;
     cursor: pointer;
 }
 
 #baixar-cv:hover{
-    background-color: #918cff;
+    background-color: var(--second-color);
     border: none;
 }
 
@@ -47,5 +47,5 @@ article {
 }
 
 .redes-sociais a :hover {
-    color: #918cff;
+    color: var(--second-color);
 }
