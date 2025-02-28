@@ -7,6 +7,7 @@
 
 .title-sobre-mim {
     font-size: 30px;
+    animation: float 4s ease-in-out infinite;
 }
 
 .title-sobre-mim h2 {
@@ -15,6 +16,7 @@
     max-width: 40px;
     margin: 0 auto;
 }
+
 
 .sobre-mim-itens {
     display: flex;
@@ -26,6 +28,21 @@
 #perfil-photo{
     max-width: 400px;
     border-radius: 150px;
+    animation: aparecer-left;
+    animation-timeline: view();
+    animation-range: cover 1% cover 50%;
+}
+
+@keyframes aparecer-left {
+    from {
+        opacity: 0;
+        translate: -10vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
 }
 
 #about-me {
@@ -33,4 +50,19 @@
     font-size: 20px;
     margin-top: 60px;
     text-align: left;
+    animation: aparecer-right;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+@keyframes aparecer-right {
+    from {
+        opacity: 0;
+        translate: 10vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
 }

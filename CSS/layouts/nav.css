@@ -6,7 +6,7 @@
     top: 0px;
     position: sticky;
     display: inline-block;
-    background-color: var(--first-color);
+    background-color: var(--third-color);
     z-index: 1;
 }
 

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Barros</title>
-    <script src="scripts/script.js"></script>
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -44,7 +43,7 @@
                 <h2>Desenvolvedor Front-end</h2>
             </div>
              <button class="baixar-cv">
-                <a href="public/curriculo_erick_barros.pdf" id="cv-btn" target="_blank">Baixar CV</a>
+                <a href="public/curriculo_erick_barros.pdf" download id="cv-btn" target="_blank">Baixar CV</a>
              </button>
             <div class="redes-sociais">
                 <a href="https://www.linkedin.com/in/erick-b-almeida/" target="_blank"><i class="fa-brands fa-linkedin" id="fa-linkedin"></i></a>
@@ -56,11 +55,11 @@
     <!-- SOBRE -->
     
     <section class="sobre-mim" id="about">
-        <div class="title-sobre-mim">
+        <div class="title-sobre-mim anima-right">
             <h1>Sobre</h1>
             <h2><span><</span> </h2> 
         </div>
-        <div class="sobre-mim-itens">
+        <div class="sobre-mim-itens anima-left">
             <img src="/assets/images/nova-foto-de-perfil.jpg" alt="" id="perfil-photo">
             <p id="about-me">Meu nome é Erick, tenho 21 anos e atualmente estou cursando Engenharia de Computação. No momento, foco meus estudos em desenvolvimento Front-End (HTML, CSS e JavaScript) e pretendo me aprofundar em React e Angular. Além disso, possuo experiências e projetos em Python e tenho um bom entendimento de SQL. Futuramente, pretendo migrar para a área de desenvolvimento Full Stack. <br><br>
                 Sou um entusiasta de tecnologia, fã de esportes e games. Sou comunicativo, amigável e bom em trabalhos em equipe. Busco sempre aprender coisas novas e me divertir desenvolvendo minhas habilidades, trazendo criatividade e eficiência para meus projetos.</p>
@@ -138,30 +137,49 @@
 
     <!-- CONTATO -->
 
-    <section class="contatos" id="contact">
-        <div class="title-contatos">
-            <h1>Contato</h1>
-            <h2><span><</span></h2> 
-        </div>
-        <form class="form-container">
-            <h1>Entre em contato!</h1>
-            <div class="grupo-nome grupo">
-                <input required type="text" id="nome">
-                <label for="nome">Nome</label>
+    <footer id="contact">
+        <article class="rodape">
+            <div class="rodape-card">
+                <h1>Erick Barros de Almeida</h1>
+                <h4>Desenvolvedor Front-End</h4>
+                <div class="email">
+                    <button id="copy-button">
+                        <p>erick.b.almeida11@gmail.com</p>
+                        <i class="fa-solid fa-copy" id="icone"></i>
+                    </button>
+                </div>
             </div>
-            <div class="grupo-email grupo">
-                <input required type="email" id="email">
-                <label for="email">e-mail</label>
+            <div class="rodape-card links">
+                <h1>Redes Sociais</h1>
+                <ul class="lista-icons">
+                    <a href="https://github.com/ErickBAlmeida" target="_blank">
+                        <li>
+                            <div class="footer-icon">
+                                <i class="fa-brands fa-github" id="fa-github"></i>
+                                <p>GitHub</p>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/erick-b-almeida/" target="_blank">
+                        <li>
+                            <div class="footer-icon">
+                                <i class="fa-brands fa-linkedin" id="fa-linkedin"></i>
+                                <p>linkedIn</p>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="mailto:erick.b.almeida11@gmail.com" target="_blank">
+                        <li>
+                            <div class="footer-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>E-mail</p>
+                            </div>
+                        </li>
+                    </a>
+                </ul>
             </div>
-            <div class="grupo-mensagem grupo">
-                <textarea required name="mesangem" id="mesangem"></textarea>
-                <label for="mesangem">Mensagem</label>
-            </div>
-            <div class="form-btn">
-                <input type="submit">
-            </div>
-        </form>
-    </section>
+        </article>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
@@ -173,5 +191,6 @@
             autoplaySpeed: 2500,
         });
     </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

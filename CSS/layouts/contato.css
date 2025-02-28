@@ -1,88 +1,81 @@
-.contatos {
-    margin-top: 180px;
+footer {
+    justify-items: center;
+    margin-top: 150px;
+    background-color: var(--third-color);
+    animation: rise;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
 }
 
-.title-contatos{
-    text-align: center;
-    font-size: 25px;
+@keyframes rise {
+    from {
+        opacity: 0;
+        translate: 0 -10vw;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
 }
 
-.title-contatos h2 {
-    transform: rotate(-90deg);
-    max-width: 40px;
-    margin: 0 auto;
+footer li {
+    list-style: none;
 }
 
-.form-container {
-    width: 30%;
-    border: 1px solid var(--third-color);
-    border-radius: 10px;
-    margin: 75px auto 0;
-    padding: 20px;
+.rodape {
+    display: flex;
+    gap: 450px;
+    padding-bottom: 100px;
 }
 
-.form-container h1{
-    text-align: center;
-}
-
-.grupo {
-    position: relative;
-    margin: 10px;
-}
-
-label {
-    columns: var(--second-color);
-    padding: 0 5px;
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    left: 1em;
-    pointer-events: none;
-    transition: .3s;
-}
-
-input,
-textarea {
-    color: white;
-    border: 2px solid var(--second-color);
-    background: transparent;
-    border-radius: 5px;
+.rodape-card{
+    line-height: 40px;
     width: 300px;
-    height: 60px;
-    padding: 0 1rem;
-    outline: none;
-    width: 100%;
+    padding-left: 65px;
 }
 
-textarea {
-    height: 150px;
-    padding: 1rem 1rem;
+.rodape-card h1 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 400px;
 }
 
-.grupo-mensagem label {
-    top: 25%;
-}
-
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label {
-    top: 0;
-    background-color: var(--first-color);
-    font: 0.7rem;
-}
-
-.form-btn {
-    margin: 10px;
-}
-
-.form-btn input {
-    color: var(--second-color);
-    font-size: 20px;
+.email button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    display: flex;
+    font-size: 17px;
+    gap: 10px;
     cursor: pointer;
 }
 
-.form-btn input:hover {
-    background-color: var(--second-color);
-    color: white;
+.email :hover {
+    color: var(--second-color);
+    transform: scale(1.01);
+}
+
+.rodape-card ul {
+    padding-left: 10px;
+}
+
+.links h1{
+    font-weight: bold;
+}
+
+.footer-icon {
+    gap: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lista-icons li {
+    color: #fff;
+}
+
+.lista-icons li:hover{
+    color: var(--second-color);
+    transform: scale(1.01);
 }
