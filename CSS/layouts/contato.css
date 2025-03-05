@@ -1,5 +1,4 @@
 footer {
-    justify-items: center;
     margin-top: 150px;
     background-color: var(--third-color);
     animation: rise;
@@ -23,20 +22,23 @@ footer li {
 }
 
 .rodape {
+    justify-content: space-around;
     display: flex;
-    gap: 450px;
-    padding-bottom: 100px;
+    padding: 50px;
 }
 
 .rodape-card{
     line-height: 40px;
-    width: 300px;
-    padding-left: 65px;
 }
 
 .rodape-card h1 {
     font-weight: bold;
     margin-bottom: 15px;
+    text-wrap: nowrap;
+}
+
+.rodape-card h4 {
+    display: flex;
     width: 400px;
 }
 
@@ -71,6 +73,10 @@ footer li {
     cursor: pointer;
 }
 
+.lista-icons a {
+    text-decoration: none;
+}
+
 .lista-icons li {
     color: #fff;
 }
@@ -78,4 +84,31 @@ footer li {
 .lista-icons li:hover{
     color: var(--second-color);
     transform: scale(1.01);
+}
+
+@media (max-width: 1040px) {
+    .rodape{
+        gap: 200px;
+    }
+
+    .rodape-card h1{
+        text-align: left;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .links h1{
+        max-width: 200px;
+    }
+
+    .rodape-card{
+        padding-left: 0;
+        max-width: 200px;
+    }
+
+    #copy-button{
+        color: var(--second-color);
+    }
 }

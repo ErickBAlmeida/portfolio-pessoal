@@ -36,3 +36,24 @@
 .png-logo img:hover{
     transform: scale(1.2);
 }
+
+@media (max-width: 1040px) {
+    .habilidades-container{
+        max-width: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100px;
+        gap: 30px;
+        margin-left: -2px;
+    }
+
+    .png-logo {
+        max-width: 100px;
+        text-align: center;
+    }
+    
+    .png-logo img{
+        max-height: 100px;
+        transition: .25s;
+    }
+}

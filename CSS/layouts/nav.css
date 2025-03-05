@@ -7,7 +7,7 @@
     position: sticky;
     display: inline-block;
     background-color: var(--third-color);
-    z-index: 1;
+    z-index: 9;
 }
 
 nav {
@@ -22,30 +22,30 @@ nav {
     margin-left: -1.5rem;
 }
 
-.nav-bar-itens {
+.nav-list {
     list-style: none;
     text-decoration: none;
     position: absolute;
     top: 15px;
-    right: 4rem;
+    right: 1rem;
 }
 
-.nav-bar-itens a {
+.nav-list a {
     text-decoration: none;
     color: var(--second-color);
 }
 
-.nav-bar-itens a :hover {
+.nav-list a :hover {
     text-decoration: underline;
     text-underline-offset: 4px;
     border-radius: 5px;
 }
 
-.nav-bar-itens a span {
+.nav-list a span {
     color: white;
 }
 
-.nav-bar-itens li {
+.nav-list li {
     display: inline-block;
     margin: 0 7px;
 }

@@ -1,14 +1,11 @@
-
-
-main {
+#main {
     height: 750px;
-    padding: 300px;
     font-size: 35px;
     --bg-image: url(/assets/images/background-linhas-de-codigo.png);
     --bg-image-opacity: .2;
 }
 
-main::after {
+#main::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -19,8 +16,8 @@ main::after {
     background-position: center;
 }
 
-article {
-    padding: 20px;
+.main-article {
+    padding: 320px;
     line-height: 70px;
     animation: aparecer 1s;
 }
@@ -37,7 +34,7 @@ article {
     }
 }
 
-article a{
+.main-article a{
     text-decoration: none;
 }
 
@@ -72,4 +69,23 @@ article a{
 
 .redes-sociais a :hover {
     color: var(--second-color);
+}
+
+@media (max-width: 1040px) {
+    .main-article {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .greetings {
+        text-align: center;
+    }
+
+    .baixar-cv {
+        margin: 0;
+    }
+
+    .redes-sociais {
+        margin: 0;
+    }
 }
