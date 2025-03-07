@@ -71,6 +71,17 @@
     color: var(--second-color);
 }
 
+
+@media (max-width: 1500px) {
+    #main {
+        height: 90vh;
+    }
+    
+    .main-article {
+        padding: 150px;
+    }
+}
+
 @media (max-width: 1040px) {
     .main-article {
         padding: 50px;
