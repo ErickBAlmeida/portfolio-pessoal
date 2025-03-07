@@ -24,12 +24,21 @@
                     <h3>Barros</h3>
                 </div>
             </div>
+            <ul class="sidebar"> 
+                <li onclick="closeSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></i></a></li>
+                <li><a href="#main" onclick="closeSidebar()">< <span>Home</span> /></a></li>
+                <li><a href="#about" onclick="closeSidebar()">< <span>Sobre</span> /></a></li>
+                <li><a href="#skills" onclick="closeSidebar()">< <span>Habilidades</span> /></a></li>
+                <li><a href="#projects" onclick="closeSidebar()">< <span>Projetos</span> /></a></li>
+                <li><a href="#contact" onclick="closeSidebar()">< <span>Contatos</span> /></a></li>
+            </ul>
             <ul class="nav-list"> 
                 <li><a href="#main">< <span>Home</span> /></a></li>
                 <li><a href="#about">< <span>Sobre</span> /></a></li>
                 <li><a href="#skills">< <span>Habilidades</span> /></a></li>
                 <li><a href="#projects">< <span>Projetos</span> /></a></li>
                 <li><a href="#contact">< <span>Contatos</span> /></a></li>
+                <li class="showSidebar" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
             </ul>
         </nav>
     </div>
@@ -190,7 +199,8 @@
             autoplaySpeed: 2500,
         });
     </script>
-    <script src="scripts/teste.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/responsividade_slick.js"></script>
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/footer.js"></script>
 </body>
 </html>

@@ -112,3 +112,19 @@ footer li {
         color: var(--second-color);
     }
 }
+
+@media (max-width: 450px) {
+    .rodape {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .rodape-card h1{
+        margin: 0;
+    }
+
+    .rodape-card h4{
+        width: auto;
+        font-size: 15px;
+    }
+}

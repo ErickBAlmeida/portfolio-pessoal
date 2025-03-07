@@ -92,3 +92,18 @@
         align-items: center;
     }
 }
+
+@media (max-width: 450px) {
+
+    /* .sobre-mim{
+        margin-top: 10px;
+    } */
+
+    .sobre-mim-itens {
+        margin: 100px auto;
+    }
+    
+    #perfil-photo {
+        max-width: 90%;
+    }
+}

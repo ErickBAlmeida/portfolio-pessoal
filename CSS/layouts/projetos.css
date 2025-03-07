@@ -160,3 +160,13 @@
         transform: none;
     }
 }
+
+@media (max-width: 450px) {
+    .slick-current div{
+        text-align: center;
+    }
+
+    .slick-arrow {
+        display: flex;
+    }
+}

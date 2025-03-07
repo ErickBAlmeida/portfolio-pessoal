@@ -57,3 +57,10 @@
         transition: .25s;
     }
 }
+
+@media (max-width: 450px) {
+    .habilidades-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
