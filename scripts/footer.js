@@ -5,11 +5,14 @@ function copiarTexto(){
 }
 
 function textocopiado(){
-    elemento = document.getElementById('icone');
+    icon = document.getElementById('icone');
+    texto = document.getElementById('email-txt');
 
-    if (elemento.classList.contains('fa-copy')){
-        elemento.classList.remove('fa-copy');
-        elemento.classList.add('fa-check');
+    if (icon.classList.contains('fa-copy')){
+        icon.classList.remove('fa-copy');
+        icon.classList.add('fa-check');
+        icon.style.color = "#918cff";
+        texto.style.color = "#918cff";
     } else {
         alert('erro: ', err)
     }
