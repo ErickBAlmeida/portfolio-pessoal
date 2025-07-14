@@ -5,31 +5,31 @@
     text-align: center;
 }
 
-.title-sobre-mim {
-    font-size: 30px;
-    margin-top: -50px;
-    animation: float 4s ease-in-out infinite;
-}
-
-.title-sobre-mim h2 {
-    transform: rotate(-90deg);
-    margin-top: -15px;
-    max-width: 40px;
-    margin: 0 auto;
-}
-
-
 .sobre-mim-itens {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     max-width: 80%;
-    margin: 190px auto;
-    gap: 100px;
+    margin: 2vw auto;
+    gap: 4rem;
 }
 
 #perfil-photo{
-    max-width: 400px;
+    max-width: 25vw;
+    height: auto;
     border-radius: 150px;
     animation: aparecer-left;
+    animation-timeline: view();
+    animation-range: cover 1% cover 50%;
+}
+
+#about-text {
+    max-width: 40%;
+    text-align: left;
+    align-items: center;
+    font-size: 20px;
+    animation: aparecer-right;
     animation-timeline: view();
     animation-range: cover 1% cover 50%;
 }
@@ -44,16 +44,6 @@
         opacity: 1;
         translate: 0 0;
     }
-}
-
-#about-me {
-    max-width: 550px;
-    font-size: 20px;
-    margin-top: 60px;
-    text-align: left;
-    animation: aparecer-right;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
 }
 
 @keyframes aparecer-right {

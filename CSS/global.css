@@ -33,3 +33,20 @@ span,
         transform: translateY(-10px);
     }
 }
+
+.title {
+    font-size: 30px;
+    margin-top: -50px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.title h2 {
+    transform: rotate(-90deg);
+    margin-top: -15px;
+    max-width: 40px;
+    margin: 0 auto;
+}
+
+section {
+    height: 80vh;
+}

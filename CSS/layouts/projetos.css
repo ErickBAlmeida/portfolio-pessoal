@@ -1,22 +1,12 @@
 .projetos {
     margin-top: 180px;
-}
-
-.title-projetos{
     text-align: center;
-    font-size: 30px;
-}
-
-.title-projetos h2 {
-    transform: rotate(-90deg);
-    max-width: 40px;
-    margin: 0 auto;
 }
 
 .carrossel-container {
     display: inline-block;
     margin: 100px auto 0;
-    width: 50%;
+    width: 60vw;
 }
 
 .slick-prev {
@@ -51,13 +41,11 @@
     background-image: url(/assets/images/logos_png/arrow-right.png);
 }
 
-.slick-next:hover{
-    transform: scale(1.4);
-}
-
+.slick-next:hover, 
 .slick-prev:hover {
     transform: scale(1.4);
 }
+
 .card {
     height: 450px;
     max-width: 270px;
@@ -81,8 +69,10 @@
     border-radius: 15px;
 }
 
-.card-content, .card-content p {
+.card-content,
+.card-content p {
     padding: 10px 10px 10px 5px;
+    text-align: left;
 }
 
 .card-content {
