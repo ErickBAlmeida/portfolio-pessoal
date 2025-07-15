@@ -1,5 +1,5 @@
 .projetos {
-    margin-top: 180px;
+    /* margin-top: 180px; */
     text-align: center;
 }
 
@@ -61,11 +61,15 @@
 
 .card:hover {
     transform: scale(1.1);
+    
+    .btns{
+        display: flex;
+    }
 }
 
 .card img {
     width: 100%;
-    max-height: 139.5px;
+    max-height: 33%;
     border-radius: 15px;
 }
 
@@ -75,10 +79,6 @@
     text-align: left;
 }
 
-.card-content {
-    height: 185px;
-}
-
 .frame-works-icons {
     margin-left: 10px;
     margin-top: 3px;
@@ -86,9 +86,12 @@
 }
 
 .btns {
-    text-align: center;
+    display: none;
+    position: absolute;
     font-size: 25px;
-    margin-top: 70px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .btns a {
@@ -110,7 +113,7 @@
 
 @media (max-width: 1040px) {
     .carrossel-container {
-        width: 80%  ;
+        width: 80vw ;
         padding-left: 40px;
     }
 
@@ -120,7 +123,8 @@
 
     .card {
         margin: 0;
-        max-width: 200px ;
+        max-width: 22vw ;
+        max-height: 100%;
     }
 
     .card:hover {
@@ -144,6 +148,12 @@
 
     .card:hover {
         transform: none;
+    }
+}
+
+@media (max-width: 680) {
+    .card {
+        width: 40vw;
     }
 }
 
