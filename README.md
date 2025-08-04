@@ -4,7 +4,7 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 
 - [Link do Portifolio](https://erick-barros.netlify.app/)
 
-- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/aa6b448f-9236-4eae-a540-e7f2c169bd83" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/aa6b448f-9236-4eae-a540-e7f2c169bd83" />
 
 
 ## 📄 Sobre
