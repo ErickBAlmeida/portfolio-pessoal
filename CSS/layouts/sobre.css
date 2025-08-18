@@ -1,4 +1,5 @@
 .sobre-mim{
+    height: 110vh;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -65,13 +66,18 @@
 }
 
 @media (max-width: 1040px){
+    .sobre-mim-itens{
+        flex-direction: column;
+    }
+    
     #perfil-photo {
         max-height: 400px;
         margin: auto 0;
     }
 
-    #about-me {
+    #about-text {
         margin: auto 0;
+        max-width: 70vw;
     }
 }
 
